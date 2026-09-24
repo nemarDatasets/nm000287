@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000287-blue)](https://doi.org/10.82901/nemar.nm000287)
+
 # Muse sleep-onset EEG
 
 This dataset contains 540 at-home EEG recordings from 203 participants, collected
