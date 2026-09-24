@@ -1,0 +1,45 @@
+{
+    "participant_id": {
+        "Description": "Unique participant identifier"
+    },
+    "recording_count": {
+        "Description": "Number of supplied EEG recordings for this participant."
+    },
+    "train_recording_count": {
+        "Description": "Number of recordings assigned train in the supplied split manifest."
+    },
+    "test_recording_count": {
+        "Description": "Number of recordings assigned test in the supplied split manifest."
+    },
+    "total_recording_duration": {
+        "Description": "Sum of stored sample counts divided by sampling frequency across this participant's recordings.",
+        "Units": "s"
+    },
+    "age": {
+        "Description": "Age of the participant at time of testing",
+        "Units": "years"
+    },
+    "sex": {
+        "Description": "Biological sex of the participant",
+        "Levels": {
+            "F": "female",
+            "M": "male"
+        }
+    },
+    "hand": {
+        "Description": "Handedness of the participant",
+        "Levels": {
+            "R": "right",
+            "L": "left",
+            "A": "ambidextrous"
+        }
+    },
+    "weight": {
+        "Description": "Body weight of the participant",
+        "Units": "kg"
+    },
+    "height": {
+        "Description": "Body height of the participant",
+        "Units": "m"
+    }
+}

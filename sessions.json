@@ -1,0 +1,32 @@
+{
+    "session_id": {
+        "Description": "Session identifier matching this participant's ses-<label> directory."
+    },
+    "recording_duration": {
+        "Description": "Stored sample count divided by sampling frequency; differs from RecordingDuration in EEG JSON by one sampling interval. TARGET LEAKAGE: all supplied recordings end exactly 300 s after N2, so this value reveals N2 onset. Exclude from causal model inputs.",
+        "Units": "s"
+    },
+    "sample_count": {
+        "Description": "Number of samples per channel, derived from the BrainVision binary file size and four float32 channels. TARGET LEAKAGE: sample_count / 128 - 300 equals N2 onset in this collection. Exclude from causal model inputs."
+    },
+    "n2_onset": {
+        "Description": "Target label: first annotated N2 onset relative to the supplied recording start, copied from events.tsv; not necessarily time since bedtime or lights out. Exclude from model inputs.",
+        "Units": "s"
+    },
+    "qc_50hz_peak_channels": {
+        "Description": "Number of channels with median Welch PSD at 50 Hz more than 10 dB above neighboring bands. Eight-second Hann windows, 50% overlap, constant detrending; center +/-0.25 Hz, neighbors 1–2.5 Hz away. Exploratory screen, not a bad-channel designation."
+    },
+    "qc_60hz_peak_channels": {
+        "Description": "Number of channels meeting the same exploratory spectral-peak criterion as qc_50hz_peak_channels, centered at 60 Hz."
+    },
+    "qc_large_amplitude_channels": {
+        "Description": "Number of channels with more than 1% of samples above 500 microvolts in absolute amplitude after applying header scaling. Exploratory review flag; offsets can contribute."
+    },
+    "split": {
+        "Description": "Session-level assignment copied without alteration from the supplied splits.csv, joined on subject_id and session_nb. This is a recording-level split: all participants with test sessions also have train sessions. The labels alone do not establish public-release permission or identify the competition's unseen-participant cohort.",
+        "Levels": {
+            "train": "Training recording according to the supplied split manifest.",
+            "test": "Held-out recording according to the supplied split manifest."
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "onset": {
+        "Description": "Time of the annotated first N2 sleep epoch relative to the beginning of this recording.",
+        "Units": "s"
+    },
+    "duration": {
+        "Description": "Duration of the event marker. Zero denotes a point annotation of N2 onset, not the duration of an N2 sleep epoch.",
+        "Units": "s"
+    },
+    "sample": {
+        "Description": "Zero-based sample index of the N2 onset annotation at 128 Hz. BrainVision marker positions are one-based and therefore equal sample + 1."
+    },
+    "value": {
+        "Description": "Numeric code assigned to the supplied annotation; this does not imply a physical stimulus or hardware trigger.",
+        "Levels": {
+            "1": "First N2 sleep epoch onset"
+        }
+    },
+    "trial_type": {
+        "Description": "Sleep-onset annotation category.",
+        "Levels": {
+            "n2_onset": "Onset of the first N2 sleep epoch, the prediction target for Track 03."
+        }
+    }
+}
