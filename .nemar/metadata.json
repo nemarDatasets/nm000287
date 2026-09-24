@@ -1,0 +1,71 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Muse Team": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000287",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000287",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "title": "Muse Sleep-Onset EEG — EEG/EMG Foundation Challenge 2026, Track 03",
+  "license": "CC-BY-NC-SA-4.0",
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "1.08 GB (1081 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises 540 at-home EEG recordings from 203 participants collected using consumer Muse S family wearable devices, provided for Track 03 (Sleep onset) of the EEG/EMG Foundation Challenge 2026. Each recording contains four EEG channels (TP9, AF7, AF8, TP10) sampled at 128 Hz, with a single annotated N2 sleep-onset event per recording, intended to support causal prediction of time-to-first-N2 from wearable EEG signals.",
+  "methods_description": "Recordings were collected collectively by participants at home using Muse S family wearable EEG headsets with four channels (TP9, AF7, AF8, TP10) sampled at 128 Hz, originally at 256 Hz and downsampled to 128 Hz. Data are stored as BrainVision triplets (.vhdr, .vmrk, .eeg) exported using pybv. Each recording is annotated with a single n2_onset event marking the first N2 sleep epoch, with recording duration fixed at 300 seconds after this onset.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "sleep onset"
+    },
+    {
+      "term": "wearable devices"
+    },
+    {
+      "term": "N2 sleep stage"
+    },
+    {
+      "term": "BrainVision"
+    },
+    {
+      "term": "brain-computer interface"
+    }
+  ],
+  "source_hash": "cfab5f3fb5fb41038acbb2609d7c2df263748e15d98ffae2ef99ee96b856e83d"
+}
