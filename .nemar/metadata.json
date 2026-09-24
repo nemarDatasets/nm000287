@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Muse Sleep-Onset EEG — EEG/EMG Foundation Challenge 2026, Track 03",
-  "description": "This dataset comprises 540 at-home EEG recordings from 203 participants collected using Muse S consumer headbands, totaling approximately 157.52 hours, for Track 03 (Sleep Onset) of the EEG/EMG Foundation Challenge 2026. Each recording contains four channels (TP9, AF7, AF8, TP10) sampled at 128 Hz with a single annotation marking the first N2 sleep epoch, and the task is to predict the time remaining until this event using only EEG recorded up to the prediction time. The data are formatted according to the EEG-BIDS specification and were validated prior to deposit.",
-  "methods_description": "EEG was recorded at home using Muse S family headbands with four channels (TP9, AF7, AF8, TP10) at a stored sampling rate of 128 Hz (possibly downsampled from 256 Hz, though unverified). Data were exported to BrainVision format using pybv 0.7.5. Signal quality was screened for nonfinite samples, constant windows, 50/60 Hz line-noise peaks, and amplitude outliers exceeding 500 microvolts, with flags recorded per recording and channel but no independent artifact diagnosis performed.",
+  "description": "This dataset comprises 540 at-home EEG recordings from 203 participants collected using Muse S consumer headbands, totaling approximately 157.52 hours. It was assembled for Track 03 (Sleep Onset) of the EEG/EMG Foundation Challenge 2026, with the task of predicting time remaining until the first N2 sleep epoch from EEG data alone. Recordings include four channels (TP9, AF7, AF8, TP10) sampled at 128 Hz, with a single annotation marking the first N2 epoch, but no full sleep-stage scoring.",
+  "methods_description": "EEG was recorded at-home using Muse S family consumer headbands with four channels (TP9, AF7, AF8, TP10) sampled at 128 Hz, exported to BrainVision format using pybv 0.7.5. Each recording contains one annotated N2 sleep onset event. Prior filtering, exact hardware generation, and resampling history are unverified. A signal quality screen assessed line-noise contamination and amplitude artifacts across all channel-recordings.",
   "license": "CC-BY-NC-SA-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -22,16 +22,19 @@
       "term": "sleep onset"
     },
     {
-      "term": "N2 sleep stage"
+      "term": "consumer EEG"
     },
     {
-      "term": "wearable EEG"
+      "term": "Muse headband"
+    },
+    {
+      "term": "N2 sleep epoch"
     },
     {
       "term": "BIDS"
     },
     {
-      "term": "Muse headband"
+      "term": "machine learning challenge"
     }
   ],
   "related_identifiers": [
@@ -70,7 +73,8 @@
     ".md",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "source_hash": "2ccaacb58582135d7c605a319cc25126a9fba71076b50d6213423fe49e8fe8f1"
+  "source_hash": "b62a2feae61a57487d9c1daec66585bab0272bb0845fd719c5e184d928fe1b45"
 }
