@@ -3,6 +3,7 @@
     "BIDSVersion": "1.7.0",
     "DatasetType": "raw",
     "Authors": ["Muse Team"],
+    "EthicsApprovals": ["Muse determined internally that this collection was exempt from ethics review. The depositor confirmed authorization and participant consent for sharing, absence of identifiable personal information, and destruction of the re-identification key."],
     "License": "CC-BY-NC-SA-4.0",
     "HowToAcknowledge": "Credit Muse Team and identify this Muse Sleep-Onset EEG dataset and its version. Include the dataset DOI when one is assigned, and retain the CC-BY-NC-SA-4.0 license attribution.",
     "Acknowledgements": "Collective at-home data collection by participants, provided by Muse for Track 03 (Sleep onset) of the EEG/EMG Foundation Challenge 2026. Collective authorship and the license matching emg2pose were specified by the dataset curator.",

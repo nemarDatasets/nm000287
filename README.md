@@ -124,9 +124,10 @@ duplicates were not tested. Missing dates prevent checking chronological separat
 Credit **Muse Team** and cite dataset `nm000287` with the version used. The data
 are licensed under [CC-BY-NC-SA-4.0](LICENSE), matching the emg2pose release.
 
-The depositor, acting on behalf of Muse, confirmed authorization and consent for
-deposit, absence of identifiable personal information, and destruction of the
-re-identification key. An ethics protocol or approval reference was not supplied.
+Muse determined internally that this collection was exempt from ethics review.
+The depositor confirmed authorization and participant consent for sharing,
+absence of identifiable personal information, and destruction of the
+re-identification key.
 
 Before upload, BIDS validation passed with no errors. All 540 recordings were
 checked for consistent splits, channel order, sample counts and event timing.
