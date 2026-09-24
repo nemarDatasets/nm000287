@@ -1,0 +1,5 @@
+﻿name	type	units	low_cutoff	high_cutoff	description	sampling_frequency	status	status_description
+TP9	EEG	V	0.0	64.0	ElectroEncephaloGram	128.0	good	n/a
+AF7	EEG	V	0.0	64.0	ElectroEncephaloGram	128.0	good	n/a
+AF8	EEG	V	0.0	64.0	ElectroEncephaloGram	128.0	good	n/a
+TP10	EEG	V	0.0	64.0	ElectroEncephaloGram	128.0	good	n/a

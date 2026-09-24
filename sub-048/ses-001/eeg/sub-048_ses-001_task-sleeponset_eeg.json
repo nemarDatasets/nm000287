@@ -1,0 +1,19 @@
+{
+    "TaskName": "sleeponset",
+    "Manufacturer": "Muse",
+    "PowerLineFrequency": 60,
+    "SamplingFrequency": 128,
+    "SoftwareFilters": "n/a",
+    "RecordingDuration": 689.9921875,
+    "RecordingType": "continuous",
+    "EEGReference": "n/a",
+    "EEGGround": "n/a",
+    "EEGPlacementScheme": "Four headband EEG channels: TP9, AF7, AF8, TP10 (extended 10/20 labels).",
+    "EEGChannelCount": 4,
+    "EOGChannelCount": 0,
+    "ECGChannelCount": 0,
+    "EMGChannelCount": 0,
+    "TriggerChannelCount": 0,
+    "MISCChannelCount": 0,
+    "SubjectArtefactDescription": "Automated exploratory signal screen (2026-09-24), not a manual artifact diagnosis. 50 Hz spectral peaks: TP10; 60 Hz spectral peaks: none flagged; large absolute amplitude: none flagged. Spectral threshold: >10 dB center-to-neighbor contrast with median Welch PSD, 8 s Hann windows, 50% overlap, constant detrending; center +/-0.25 Hz, neighbors 1\u20132.5 Hz away. Amplitude threshold: >1% of samples with absolute amplitude >500 microvolts; offsets can contribute. Nonfinite samples: 0; exactly constant aligned 2 s channel-windows: 0. No channels were rejected and no signal cleaning was applied. Prior cleaning and participant-specific artifact causes remain unknown."
+}

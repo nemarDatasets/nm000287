@@ -1,0 +1,3 @@
+session_id	split	recording_duration	sample_count	n2_onset	qc_50hz_peak_channels	qc_60hz_peak_channels	qc_large_amplitude_channels
+ses-001	train	1140.0	145920	840.0	0	2	0
+ses-002	test	1140.0	145920	840.0	0	4	0

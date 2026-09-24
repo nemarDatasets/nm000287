@@ -1,0 +1,12 @@
+{
+    "TaskName": "sleeponset",
+    "TaskDescription": "At-home continuous wearable EEG for predicting the time remaining until the first N2 sleep epoch. The competition assesses performance on new nights from both seen and unseen participants. Each supplied recording has one n2_onset annotation; full sleep-stage sequences are not included.",
+    "Manufacturer": "Muse",
+    "ManufacturersModelName": "Muse S family (generation unspecified)",
+    "SamplingFrequencyProvenance": "At the curator's direction, downsampling from a nominal Muse S acquisition rate of 256 Hz to the stored 128 Hz is assumed. The original acquisition rate and downsampling operation are not independently verified. Resampling software, method, and anti-aliasing filter settings are unknown. This is a provenance assumption, not processing performed during metadata enrichment.",
+    "RecordingEnvironment": "Collective collection by participants at home, as confirmed by the dataset curator. A single laboratory site, address, or acquisition department does not describe this collection.",
+    "CapManufacturer": "Muse",
+    "EEGPlacementScheme": "Four headband EEG channels: TP9, AF7, AF8, TP10 (extended 10/20 labels).",
+    "MISCChannelCount": 0,
+    "HardwareFilters": "n/a"
+}
