@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Muse Sleep-Onset EEG — EEG/EMG Foundation Challenge 2026, Track 03",
-  "description": "This dataset comprises 540 at-home EEG recordings from 203 participants collected using Muse S-family wearable headbands, for Track 03 (Sleep onset) of the EEG/EMG Foundation Challenge 2026. Recordings, totaling approximately 157.52 hours, use four channels (TP9, AF7, AF8, TP10) sampled at 128 Hz, with a single annotation marking the onset of the first N2 sleep epoch. The dataset supports development of models predicting time to sleep onset from EEG signals in a causal, at-home monitoring context.",
-  "methods_description": "EEG was recorded at home using Muse S-family wearable headbands with four channels (TP9, AF7, AF8, TP10) at a stored sampling rate of 128 Hz, possibly downsampled from 256 Hz. Data were exported to BrainVision format using pybv 0.7.5 and organized according to the EEG-BIDS standard. Each recording includes one annotated event marking the first N2 sleep epoch; full sleep-stage scoring was not performed or included.",
+  "description": "This dataset contains 540 at-home, four-channel (TP9, AF7, AF8, TP10) EEG recordings from 203 participants, collected with Muse headbands at 128 Hz. It was prepared for Track 03 (Sleep onset) of the EEG/EMG Foundation Challenge 2026, where the task is to predict time remaining until the first N2 sleep epoch from EEG recorded up to the prediction time. Each recording carries a single N2-onset annotation, and the deposit includes a train/test split and signal-quality flags.",
+  "methods_description": "Recordings were made at home by participants using a Muse S family headband with four dry EEG channels (TP9, AF7, AF8, TP10), stored at 128 Hz (downsampling from 256 Hz is a curator-supplied assumption). Each recording lasts about 6 to 30 minutes and ends 300 s after the annotated first N2 epoch. Data were exported to BrainVision format with pybv and organized according to EEG-BIDS.",
   "license": "CC-BY-NC-SA-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -14,19 +14,22 @@
       "term": "EEG"
     },
     {
-      "term": "Sleep Onset"
+      "term": "sleep onset"
+    },
+    {
+      "term": "N2 sleep"
     },
     {
       "term": "wearable EEG"
     },
     {
-      "term": "N2 sleep stage"
+      "term": "Muse headband"
     },
     {
-      "term": "BIDS"
+      "term": "at-home recording"
     },
     {
-      "term": "at-home monitoring"
+      "term": "machine learning challenge"
     }
   ],
   "related_identifiers": [
